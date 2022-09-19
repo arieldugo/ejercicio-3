@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    --lavanderweb: #695c5c;
+    --magenta: #efefef;
+    --darkliver: #5a464c;
+    --darkpurple: #774b6c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background: var(--darkpurple);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 0px;
+    width: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 50px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-shadow: 2px 2px var(--magenta);
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50vh;
+    margin: 2rem;
+    /* border: solid red; */
+    box-shadow: 0px 0px 10px 5px #8C1848 inset;
+    border-radius: 30px;
+    background: var(--magenta);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.card-info {
+    /* border: solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 75%;
+    gap: 1rem;
+    margin: 2rem;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+
+.cards h2 {
+    font-size: 40px;
+}
+
+.cards small {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.cards p {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-img {
+    width: 100%;
+    max-width: 100%;
+    /* border: solid red; */
+    margin: 2rem;
+    animation: anim 1s ease-in 0s 1 normal none;
+}
+
+.pizza-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 100vh;
+    margin: 2rem;
+    /* border: solid red; */
+}
+
+.pizzaSelector {
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 15rem;
+    margin: 2rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--lavanderweb);
+}
+
+.select-btn {
+    cursor: pointer;
+    background-color: var(--lavanderweb);
+    color: black;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 2.5rem;
+    width: 15rem;
+}
+
+.select-btn:hover {
+    background-color: var(--magenta);
+}
+
+@keyframes anim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
